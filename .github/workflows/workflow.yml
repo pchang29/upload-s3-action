@@ -19,4 +19,4 @@ jobs:
           aws-region: 'us-west-2'  # Specify your AWS region
 
       - name: Upload directory to S3
-        run: aws s3 cp ./uploads s3://${{ secrets.AWS_BUCKET }}/ --recursive --no-acl
+        run: aws s3 cp ./uploads s3://${{ secrets.AWS_BUCKET }}/ --recursive
